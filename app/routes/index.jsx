@@ -58,6 +58,29 @@ export default function Index() {
         >
           Check my photos!
         </Button>
+        <Typography variant="h6" mt={3}>
+          What I recently worked on?
+        </Typography>
+        <Button
+          variant="outlined"
+          href="https://camilleetflorent.fr"
+          fullWidth
+          sx={{
+            mb: 1,
+          }}
+        >
+          Mariage Camille & Florent
+        </Button>
+        <Button
+          variant="outlined"
+          href="https://black-jack.guillaumetremeau.me"
+          fullWidth
+          sx={{
+            mb: 1,
+          }}
+        >
+          Black Jack game
+        </Button>
         <Box mt={3} typography="subtitle2">
           <Link underline="none" href="tel:+330770818649">
             +33 (0) 7 70 81 86 49
