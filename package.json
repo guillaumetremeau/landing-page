@@ -4,6 +4,7 @@
   "description": "",
   "license": "",
   "dependencies": {
+    "@codersrank/summary": "^0.9.13",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.4.2",
