@@ -19270,8 +19270,8 @@ function Links() {
     routeModules
   } = useRemixContext(), {
     matches
-  } = useDataRouterStateContext(), links = React3.useMemo(() => getLinksForMatches(matches, routeModules, manifest), [matches, routeModules, manifest]);
-  return /* @__PURE__ */ React3.createElement(React3.Fragment, null, links.map((link) => {
+  } = useDataRouterStateContext(), links2 = React3.useMemo(() => getLinksForMatches(matches, routeModules, manifest), [matches, routeModules, manifest]);
+  return /* @__PURE__ */ React3.createElement(React3.Fragment, null, links2.map((link) => {
     if (isPageLinkDescriptor(link))
       return /* @__PURE__ */ React3.createElement(PrefetchPageLinks, _extends4({
         key: link.page
@@ -19301,8 +19301,8 @@ function usePrefetchedStylesheets(matches) {
   } = useRemixContext(), [styleLinks, setStyleLinks] = React3.useState([]);
   return React3.useEffect(() => {
     let interrupted = !1;
-    return getStylesheetPrefetchLinks(matches, manifest, routeModules).then((links) => {
-      interrupted || setStyleLinks(links);
+    return getStylesheetPrefetchLinks(matches, manifest, routeModules).then((links2) => {
+      interrupted || setStyleLinks(links2);
     }), () => {
       interrupted = !0;
     };
@@ -19856,7 +19856,8 @@ function App() {
 // app/routes/index.jsx
 var routes_exports = {};
 __export(routes_exports, {
-  default: () => Index
+  default: () => Index,
+  links: () => links
 });
 
 // node_modules/@mui/material/styles/index.js
@@ -21331,7 +21332,13 @@ init_SvgIcon2();
 init_generateUtilityClass3();
 
 // app/routes/index.jsx
-var import_GitHub = __toESM(require_GitHub()), import_LinkedIn = __toESM(require_LinkedIn()), import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime());
+var import_GitHub = __toESM(require_GitHub()), import_LinkedIn = __toESM(require_LinkedIn());
+
+// app/styles/index.css
+var styles_default = "/build/_assets/index-OAUVL3K4.css";
+
+// app/routes/index.jsx
+var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime()), links = () => [{ rel: "stylesheet", href: styles_default }];
 function Index() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Container_default, { maxWidth: "sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
     Box_default,
@@ -21354,19 +21361,19 @@ function Index() {
           !1,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 22,
+            lineNumber: 29,
             columnNumber: 9
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h5", align: "center", mb: 2, children: "Code with Guillaume" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 28,
+          lineNumber: 35,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { align: "center", mb: 2, children: "Hi! I'm Guillaume Tremeau, a freelance web developer and passionate photographer." }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 31,
+          lineNumber: 38,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -21387,7 +21394,7 @@ function Index() {
                   underline: "none",
                   children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_LinkedIn.default, {}, void 0, !1, {
                     fileName: "app/routes/index.jsx",
-                    lineNumber: 48,
+                    lineNumber: 55,
                     columnNumber: 13
                   }, this)
                 },
@@ -21395,18 +21402,18 @@ function Index() {
                 !1,
                 {
                   fileName: "app/routes/index.jsx",
-                  lineNumber: 44,
+                  lineNumber: 51,
                   columnNumber: 11
                 },
                 this
               ),
               /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link_default, { href: "https://github.com/guillaumetremeau", underline: "none", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_GitHub.default, {}, void 0, !1, {
                 fileName: "app/routes/index.jsx",
-                lineNumber: 51,
+                lineNumber: 58,
                 columnNumber: 13
               }, this) }, void 0, !1, {
                 fileName: "app/routes/index.jsx",
-                lineNumber: 50,
+                lineNumber: 57,
                 columnNumber: 11
               }, this)
             ]
@@ -21415,7 +21422,7 @@ function Index() {
           !0,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 35,
+            lineNumber: 42,
             columnNumber: 9
           },
           this
@@ -21432,14 +21439,14 @@ function Index() {
           !1,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 54,
+            lineNumber: 61,
             columnNumber: 9
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h6", mt: 3, children: "What I recently worked on?" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 61,
+          lineNumber: 68,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -21457,7 +21464,7 @@ function Index() {
           !1,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 64,
+            lineNumber: 71,
             columnNumber: 9
           },
           this
@@ -21477,32 +21484,47 @@ function Index() {
           !1,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 74,
+            lineNumber: 81,
             columnNumber: 9
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h6", mt: 3, children: "CodersRanks" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h6", mt: 3, children: "My Coding Activity & Stats" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 84,
+          lineNumber: 91,
           columnNumber: 9
         }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+          "codersrank-summary",
+          {
+            username: "guillaumetremeau",
+            "show-avatar": "false"
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 94,
+            columnNumber: 9
+          },
+          this
+        ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Box_default, { mt: 3, typography: "subtitle2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link_default, { underline: "none", href: "tel:+330770818649", children: "+33 (0) 7 70 81 86 49" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 88,
+          lineNumber: 99,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 87,
+          lineNumber: 98,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Box_default, { mt: 1, typography: "subtitle2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link_default, { underline: "none", href: "mailto:tremeauguillaume@gmail.com", children: "tremeauguillaume@gmail.com" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 93,
+          lineNumber: 104,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 92,
+          lineNumber: 103,
           columnNumber: 9
         }, this)
       ]
@@ -21511,19 +21533,19 @@ function Index() {
     !0,
     {
       fileName: "app/routes/index.jsx",
-      lineNumber: 15,
+      lineNumber: 22,
       columnNumber: 7
     },
     this
   ) }, void 0, !1, {
     fileName: "app/routes/index.jsx",
-    lineNumber: 14,
+    lineNumber: 21,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "fcf50645", entry: { module: "/build/entry.client-YECO74QL.js", imports: ["/build/_shared/chunk-OSEEA2YN.js", "/build/_shared/chunk-TCN6SRWG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XED4TU47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-QI4MYAKD.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-FCF50645.js" };
+var assets_manifest_default = { version: "2bb5c125", entry: { module: "/build/entry.client-JDYYTJNM.js", imports: ["/build/_shared/chunk-OSEEA2YN.js", "/build/_shared/chunk-TCN6SRWG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XED4TU47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-2IHNLTDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-2BB5C125.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !1, v2_meta: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

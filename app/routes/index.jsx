@@ -6,8 +6,15 @@ import {
   Link,
   Typography,
 } from "@mui/material";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import stylesUrl from "~/styles/index.css";
+
+export const links = () => {
+  return [{ rel: "stylesheet", href: stylesUrl }];
+};
 
 export default function Index() {
   return (
@@ -81,6 +88,13 @@ export default function Index() {
         >
           Black Jack game
         </Button>
+        <Typography variant="h6" mt={3}>
+          My Coding Activity & Stats
+        </Typography>
+        <codersrank-summary
+          username="guillaumetremeau"
+          show-avatar="false"
+        ></codersrank-summary>
         <Box mt={3} typography="subtitle2">
           <Link underline="none" href="tel:+330770818649">
             +33 (0) 7 70 81 86 49
