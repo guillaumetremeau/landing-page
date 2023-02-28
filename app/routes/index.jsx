@@ -105,8 +105,10 @@ export default function Index() {
         </Typography>
         <codersrank-summary
           username="guillaumetremeau"
-          show-avatar="false"
+          show-header="false"
+          branding="false"
         ></codersrank-summary>
+        <codersrank-skills-chart username="guillaumetremeau"></codersrank-skills-chart>
         <Box mt={3} typography="subtitle2">
           <Link underline="none" href="tel:+330770818649">
             +33 (0) 7 70 81 86 49
