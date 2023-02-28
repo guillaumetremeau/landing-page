@@ -19,7 +19,7 @@ export const links = () => {
 
 export default function Index() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <Box
         display="flex"
         alignItems="center"
@@ -108,7 +108,27 @@ export default function Index() {
           show-header="false"
           branding="false"
         ></codersrank-summary>
-        <codersrank-skills-chart username="guillaumetremeau"></codersrank-skills-chart>
+        <codersrank-skillschart
+          username="guillaumetremeau"
+          labels
+          legend
+          tooltip
+        ></codersrank-skillschart>
+        <codersrank-timeline
+          username="guillaumetremeau"
+          type="technologies"
+        ></codersrank-timeline>
+        <Typography variant="h6" mt={3}>
+          Experience
+        </Typography>
+        <codersrank-work-experience
+          username="guillaumetremeau"
+          branding="false"
+        ></codersrank-work-experience>
+        <Typography variant="h6" mt={3}>
+          Education
+        </Typography>
+        <codersrank-education username="guillaumetremeau"></codersrank-education>
         <Box mt={3} typography="subtitle2">
           <Link underline="none" href="tel:+330770818649">
             +33 (0) 7 70 81 86 49

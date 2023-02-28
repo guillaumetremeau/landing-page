@@ -4,8 +4,11 @@
   "description": "",
   "license": "",
   "dependencies": {
+    "@codersrank/education": "^0.9.12",
     "@codersrank/skills-chart": "^0.9.21",
     "@codersrank/summary": "^0.9.13",
+    "@codersrank/timeline": "^0.9.2",
+    "@codersrank/work-experience": "^0.9.8",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.4.2",

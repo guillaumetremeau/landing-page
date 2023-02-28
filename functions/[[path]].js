@@ -21341,7 +21341,7 @@ var styles_default = "/build/_assets/index-AKVYQ44B.css";
 // app/routes/index.jsx
 var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime()), links = () => [{ rel: "stylesheet", href: styles_default }];
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Container_default, { maxWidth: "sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Container_default, { maxWidth: "md", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
     Box_default,
     {
       display: "flex",
@@ -21545,27 +21545,84 @@ function Index() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("codersrank-skills-chart", { username: "guillaumetremeau" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+          "codersrank-skillschart",
+          {
+            username: "guillaumetremeau",
+            labels: !0,
+            legend: !0,
+            tooltip: !0
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 111,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+          "codersrank-timeline",
+          {
+            username: "guillaumetremeau",
+            type: "technologies"
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 117,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h6", mt: 3, children: "Experience" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 111,
+          lineNumber: 121,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+          "codersrank-work-experience",
+          {
+            username: "guillaumetremeau",
+            branding: "false"
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 124,
+            columnNumber: 9
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Typography_default, { variant: "h6", mt: 3, children: "Education" }, void 0, !1, {
+          fileName: "app/routes/index.jsx",
+          lineNumber: 128,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("codersrank-education", { username: "guillaumetremeau" }, void 0, !1, {
+          fileName: "app/routes/index.jsx",
+          lineNumber: 131,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Box_default, { mt: 3, typography: "subtitle2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link_default, { underline: "none", href: "tel:+330770818649", children: "+33 (0) 7 70 81 86 49" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 113,
+          lineNumber: 133,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 112,
+          lineNumber: 132,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Box_default, { mt: 1, typography: "subtitle2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link_default, { underline: "none", href: "mailto:tremeauguillaume@gmail.com", children: "tremeauguillaume@gmail.com" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 118,
+          lineNumber: 138,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 117,
+          lineNumber: 137,
           columnNumber: 9
         }, this)
       ]
@@ -21586,7 +21643,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "8ea87238", entry: { module: "/build/entry.client-56K2VPPI.js", imports: ["/build/_shared/chunk-OSEEA2YN.js", "/build/_shared/chunk-TCN6SRWG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XED4TU47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3WM5BWDN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-8EA87238.js" };
+var assets_manifest_default = { version: "e19057f0", entry: { module: "/build/entry.client-LARVJMMY.js", imports: ["/build/_shared/chunk-OSEEA2YN.js", "/build/_shared/chunk-TCN6SRWG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XED4TU47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Y2LB5OYL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-E19057F0.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !1, v2_meta: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
