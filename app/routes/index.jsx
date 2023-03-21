@@ -82,6 +82,16 @@ export default function Index() {
         </Typography>
         <Button
           variant="outlined"
+          href="https://shootings.guillaumetremeau.me"
+          fullWidth
+          sx={{
+            mb: 1,
+          }}
+        >
+          Shootings
+        </Button>
+        <Button
+          variant="outlined"
           href="https://camilleetflorent.guillaumetremeau.me"
           fullWidth
           sx={{
